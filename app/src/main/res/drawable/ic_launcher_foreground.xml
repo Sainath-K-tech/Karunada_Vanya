@@ -1,0 +1,22 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- A simple leaf-like shape for Karunada Vanya -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M54,15 C54,15 25,40 25,65 C25,85 40,95 54,95 C68,95 83,85 83,65 C83,40 54,15 54,15 Z M54,90 C45,90 32,82 32,65 C32,48 54,28 54,28 C54,28 76,48 76,65 C76,82 63,90 54,90 Z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M54,28 L54,90" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M54,45 L40,55" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M54,60 L68,50" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M54,75 L42,82" />
+</vector>

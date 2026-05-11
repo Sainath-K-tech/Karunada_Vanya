@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/wikiFragment">
+
+    <fragment
+        android:id="@+id/wikiFragment"
+        android:name="com.karunada.vanya.ui.wiki.WikiFragment"
+        android:label="Wiki">
+        <action
+            android:id="@+id/action_wiki_to_detail"
+            app:destination="@id/animalDetailFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/animalDetailFragment"
+        android:name="com.karunada.vanya.ui.wiki.AnimalDetailFragment"
+        android:label="Animal Detail">
+        <argument
+            android:name="wikiId"
+            app:argType="string"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/alertFragment"
+        android:name="com.karunada.vanya.ui.alert.AlertFragment"
+        android:label="Alert"/>
+
+    <fragment
+        android:id="@+id/guideFragment"
+        android:name="com.karunada.vanya.ui.guide.GuideFragment"
+        android:label="Guide"/>
+
+    <fragment
+        android:id="@+id/soundsFragment"
+        android:name="com.karunada.vanya.ui.sounds.SoundsFragment"
+        android:label="Sounds"/>
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.karunada.vanya.ui.profile.ProfileFragment"
+        android:label="Profile"/>
+
+    <fragment
+        android:id="@+id/adminFragment"
+        android:name="com.karunada.vanya.ui.admin.AdminFragment"
+        android:label="Admin"/>
+
+</navigation>

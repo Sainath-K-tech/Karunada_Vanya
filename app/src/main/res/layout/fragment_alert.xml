@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFF8E1">
+
+    <!-- Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#B71C1C"
+        android:padding="16dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🚨 Movement Alert"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Community wildlife alerts — last 6 hours"
+            android:textSize="13sp"
+            android:textColor="#FFCDD2"/>
+
+    </LinearLayout>
+
+    <!-- Report button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/reportAlertButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="+ Report Wildlife Sighting"
+        android:textSize="16sp"
+        android:backgroundTint="#E53935"/>
+
+    <!-- Active alerts label -->
+    <TextView
+        android:id="@+id/activeAlertsLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="4dp"
+        android:text="Active Alerts"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#B71C1C"/>
+
+    <!-- Alert list -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/alertRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="8dp"
+        android:clipToPadding="false"/>
+
+</LinearLayout>
